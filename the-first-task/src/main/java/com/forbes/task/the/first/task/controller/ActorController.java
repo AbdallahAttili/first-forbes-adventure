@@ -43,8 +43,4 @@ public class ActorController {
         actorService.deleteActorById(actorId); // Deletes an actor by their ID
     }
 
-    @GetMapping("/actors/{name}/films")
-    public Set<Film> getFilmsByActorName(@PathVariable String name) {
-        return actorService.getFilmsByActorName(name);
-    }
 }

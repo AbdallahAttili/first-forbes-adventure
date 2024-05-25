@@ -48,8 +48,4 @@ public class ActorService {
         actorRepository.deleteById(actorId); // Deletes an actor by their ID
     }
 
-    public Set<Film> getFilmsByActorName(String actorName) {
-        Actor actor = actorRepository.findByName(actorName);
-        return actor != null ? actor.getFilms() : null;
-    }
 }
